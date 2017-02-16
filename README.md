@@ -32,7 +32,7 @@ Once you have the [Constraid][] dependency pulled you are ready to open the
 open ConstraidPlayground.xcworkspace
 ```
 
-The above will open the project's workspace in XCode. Frome here you need to run `Product ->
+The above will open the project's workspace in XCode. From here you need to run `Product ->
 Clean` to make sure everything is clean and then run `Product -> Build` to build the
 workspace and its dependencies.
 
