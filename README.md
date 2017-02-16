@@ -61,3 +61,6 @@ We love open source software. See [our other projects][community] or
 [constraid]: https://github.com/uptech/constraid
 [carthage]: https://github.com/Carthage/Carthage
 [Playground]: https://developer.apple.com/swift/blog/?id=35
+[community]: https://github.com/uptech
+[hire]: http://upte.ch
+[uptech]: http://upte.ch
