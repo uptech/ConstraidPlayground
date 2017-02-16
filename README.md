@@ -45,6 +45,19 @@ Assistant editor" button and select the Timeline to see the sample view rendered
 This view is rendered as you make changes, so the hope is that it gives you an easy
 environment to play around with [constraid][].
 
+## License
+
+`ConstraidPlayground` is Copyright © 2017 UpTech Works, LLC. It is free software, and
+may be redistributed under the terms specified in the LICENSE file.
+
+## About ![uptech](http://upte.ch/img/logo.png)
+
+`ConstraidPlayground` is maintained and funded by [UpTech Works, LLC][uptech], a
+software design & development agency & consultancy.
+
+We love open source software. See [our other projects][community] or
+[hire us][hire] to design, develop, and grow your product.
+
 [constraid]: https://github.com/uptech/constraid
 [carthage]: https://github.com/Carthage/Carthage
 [Playground]: https://developer.apple.com/swift/blog/?id=35
