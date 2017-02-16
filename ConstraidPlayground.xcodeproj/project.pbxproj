@@ -14,6 +14,30 @@
 		E99785721E5595AF003B6779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99785701E5595AF003B6779 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E997857F1E5597FA003B6779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E997857A1E5597FA003B6779 /* Constraid.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9CAB29F1E21954B00CDA4E2;
+			remoteInfo = Constraid;
+		};
+		E99785811E5597FA003B6779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E997857A1E5597FA003B6779 /* Constraid.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9CAB2A81E21954B00CDA4E2;
+			remoteInfo = ConstraidTests;
+		};
+		E99785831E5599E7003B6779 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E997857A1E5597FA003B6779 /* Constraid.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9CAB29E1E21954B00CDA4E2;
+			remoteInfo = Constraid;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E99785641E5595AF003B6779 /* ConstraidPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraidPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99785671E5595AF003B6779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +46,8 @@
 		E997856E1E5595AF003B6779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99785711E5595AF003B6779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99785731E5595AF003B6779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99785791E5597CE003B6779 /* ConstraidPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ConstraidPlayground.playground; sourceTree = SOURCE_ROOT; };
+		E997857A1E5597FA003B6779 /* Constraid.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Constraid.xcodeproj; path = Carthage/Checkouts/Constraid/Constraid.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,8 +64,10 @@
 		E997855B1E5595AF003B6779 = {
 			isa = PBXGroup;
 			children = (
+				E99785791E5597CE003B6779 /* ConstraidPlayground.playground */,
 				E99785661E5595AF003B6779 /* ConstraidPlayground */,
 				E99785651E5595AF003B6779 /* Products */,
+				E997857A1E5597FA003B6779 /* Constraid.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +92,15 @@
 			path = ConstraidPlayground;
 			sourceTree = "<group>";
 		};
+		E997857B1E5597FA003B6779 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E99785801E5597FA003B6779 /* Constraid.framework */,
+				E99785821E5597FA003B6779 /* ConstraidTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +115,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E99785841E5599E7003B6779 /* PBXTargetDependency */,
 			);
 			name = ConstraidPlayground;
 			productName = ConstraidPlayground;
@@ -112,12 +150,35 @@
 			mainGroup = E997855B1E5595AF003B6779;
 			productRefGroup = E99785651E5595AF003B6779 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E997857B1E5597FA003B6779 /* Products */;
+					ProjectRef = E997857A1E5597FA003B6779 /* Constraid.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E99785631E5595AF003B6779 /* ConstraidPlayground */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E99785801E5597FA003B6779 /* Constraid.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Constraid.framework;
+			remoteRef = E997857F1E5597FA003B6779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E99785821E5597FA003B6779 /* ConstraidTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ConstraidTests.xctest;
+			remoteRef = E99785811E5597FA003B6779 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E99785621E5595AF003B6779 /* Resources */ = {
@@ -143,6 +204,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E99785841E5599E7003B6779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Constraid;
+			targetProxy = E99785831E5599E7003B6779 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E997856B1E5595AF003B6779 /* Main.storyboard */ = {
@@ -300,6 +369,7 @@
 				E99785781E5595AF003B6779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
